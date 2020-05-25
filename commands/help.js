@@ -3,7 +3,7 @@ module.exports = function help(args = null, flags = null) {
         const text = 
 `# TeamsTools aide
 ## Desciption
-TeamsTools est un outil qui saura vous assister pour vos travails d'équipe. La communication avec ce bot est à effectuer en ligne de commande. Cet outil se veut simple d'accès et modulaire. Pour toute question sur le projet contactez moi sur [la page GitHub du projet](github.com) 
+TeamsTools est un outil qui saura vous assister pour vos travails d'équipe. La communication avec ce bot est à effectuer en ligne de commande. Cet outil se veut simple d'accès et modulaire. Pour toute question sur le projet contactez moi sur [la page GitHub du projet](https://github.com/JOTSR/TeamsTools) 
 ## Prise en main
 Vous pouvez à tous moments accéder à l'aide en tapant "!help".
 Structure type d'une commande : "!commandName arg1 arg2 \`string argument\` --flag1 --flag2"
