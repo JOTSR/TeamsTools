@@ -11,12 +11,14 @@ bot.on('message', (message) => {
     if(message.content.match(/(<@!(.*?)>)/g)) {
         const content = message.content.split(/(<@!.*?>)\s/g)[2]
         if(content.indexOf('!') === 0) {
+            process.env.DISCORD_SERVEUR = message.guild.id
             handleCommand(message, content, message.author, true)
         } else {
             message.reply(`Je n'ai pas compris votre requête : si vous rencontrez des difficultés, tapez "!help"`)
         }
     } else {
         if(message.content.indexOf('!') === 0) {
+            process.env.DISCORD_SERVEUR = message.guild.id
             handleCommand(message, message.content, message.author)
         }
     }
