@@ -1,8 +1,11 @@
 //https://discord.com/oauth2/authorize?client_id=714522982906855475&scope=bot&permissions=2146959219
 
+const DotEnv = require('dotenv')
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 const Command = require('./command')
+
+DotEnv.config()
 
 bot.on('message', (message) => {
     if(message.content.match(/(<@!(.*?)>)/g)) {
@@ -46,5 +49,5 @@ function handleCommand(message, commandString, user, privateResponse = false) {
 
 }
 
-bot.login('NzE0NTIyOTgyOTA2ODU1NDc1.Xsv9vQ.AL0EZbeIKAoX7jbEno7W8uuU5W8')
+bot.login(process.env.BOT_TOKEN)
 
