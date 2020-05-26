@@ -13,12 +13,12 @@ module.exports = class Command {
             switch(this.command) {
                 case '!help':
                     _help(this.arguments, this.flags)
-                        .then(result => {
-                            success(result)
-                        })
-                        .catch(error => {
-                            reject(error)
-                        })
+                       .then(result => {
+                           success(result)
+                       })
+                       .catch(error => {
+                           reject(error)
+                       })
                     break
                 case '!objectives':
                     _objectives(this.arguments, this.flags)
